@@ -14,6 +14,7 @@
 		2A8369841CF2C8ED00C77B69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8369821CF2C8ED00C77B69 /* LaunchScreen.storyboard */; };
 		2A83698F1CF2C8ED00C77B69 /* MatchingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A83698E1CF2C8ED00C77B69 /* MatchingGameTests.swift */; };
 		2A83699A1CF2C8ED00C77B69 /* MatchingGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8369991CF2C8ED00C77B69 /* MatchingGameUITests.swift */; };
+		2A8369A81CF2C9F900C77B69 /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = 2A8369A71CF2C9F900C77B69 /* Supporting Files */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2A8369951CF2C8ED00C77B69 /* MatchingGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchingGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8369991CF2C8ED00C77B69 /* MatchingGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingGameUITests.swift; sourceTree = "<group>"; };
 		2A83699B1CF2C8ED00C77B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8369A71CF2C9F900C77B69 /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		2A83696D1CF2C8ED00C77B69 = {
 			isa = PBXGroup;
 			children = (
+				2A8369A71CF2C9F900C77B69 /* Supporting Files */,
 				2A8369781CF2C8ED00C77B69 /* MatchingGame */,
 				2A83698D1CF2C8ED00C77B69 /* MatchingGameTests */,
 				2A8369981CF2C8ED00C77B69 /* MatchingGameUITests */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					2A8369751CF2C8ED00C77B69 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2HCC5J68KS;
 					};
 					2A8369891CF2C8ED00C77B69 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -231,6 +235,7 @@
 			files = (
 				2A8369841CF2C8ED00C77B69 /* LaunchScreen.storyboard in Resources */,
 				2A8369811CF2C8ED00C77B69 /* Assets.xcassets in Resources */,
+				2A8369A81CF2C9F900C77B69 /* Supporting Files in Resources */,
 				2A83697F1CF2C8ED00C77B69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MatchingGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Lily-Du.MatchingGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MatchingGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Lily-Du.MatchingGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +495,7 @@
 				2A8369A01CF2C8ED00C77B69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A8369A11CF2C8ED00C77B69 /* Build configuration list for PBXNativeTarget "MatchingGameTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +504,7 @@
 				2A8369A31CF2C8ED00C77B69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A8369A41CF2C8ED00C77B69 /* Build configuration list for PBXNativeTarget "MatchingGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +513,7 @@
 				2A8369A61CF2C8ED00C77B69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
